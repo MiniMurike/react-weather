@@ -1,0 +1,18 @@
+header {
+    width: 100%;
+    background-color: #6f47ae;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.3s;
+
+    &:hover {
+        transform: rotate(3deg) scale(105%);
+    }
+}

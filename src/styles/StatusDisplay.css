@@ -1,0 +1,56 @@
+.status-window {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.start .ico {
+    content: url("../img/arrow-left.svg");
+    width: 50%;
+    height: 50%;
+}
+
+.loading .ico {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color: lightblue transparent transparent transparent;
+    border-width: 5px;
+    border-style: solid;
+    animation: loadingIco ease-in-out 0.5s infinite;
+}
+
+@keyframes loadingIco {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    .status-window {
+        margin: auto;
+        width: 100%;
+    }
+
+    .start .ico {
+        display: none;
+    }
+
+    .loading .ico {
+        width: 2em;
+        height: 2em;
+        border-width: 20px;
+    }
+}

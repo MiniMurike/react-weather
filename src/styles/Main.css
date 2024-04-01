@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+@media (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+}
